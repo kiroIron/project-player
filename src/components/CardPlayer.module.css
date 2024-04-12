@@ -1,0 +1,31 @@
+.Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 200px;
+    height: 200px;
+    background-color: #666;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+.Row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+}
+.Row span:nth-child(1){
+    text-transform: capitalize;
+}
+.Row span:nth-child(1)::first-letter{
+    color: aquamarine;
+    font-size: 1.2rem;
+}
+.Row span:nth-child(2){
+    
+}

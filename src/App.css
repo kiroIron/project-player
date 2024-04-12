@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container-player{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Container-form{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.Container-form form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 
-.App-link {
-  color: #61dafb;
 }
+.Container-form .Con-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    font-size: 40px;
+}
+.Container-form .Con-input label{
+    text-transform: capitalize;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.Container-form .Con-input input{
+    font-size: 40px;
+    padding-left: 10px;
+}
+.Container-form  button{
+    width: 100%;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 20px 0;
 }
